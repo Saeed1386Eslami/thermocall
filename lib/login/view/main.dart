@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:thermocal/Register.dart';
-import 'package:thermocal/login.dart';
+import 'register.dart';
+import 'login.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
 
 
-home: login()
+home: Login()
 
 
     );
