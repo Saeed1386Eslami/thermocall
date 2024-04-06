@@ -41,7 +41,7 @@ class Login extends StatelessWidget {
             Padding(
               padding: EdgeInsets.only(bottom: 32),
             ),
-            s(ss: 'Log in', sss: "Don't have an account?"),
+            Under_Box(enter: 'Log in', change: "Don't have an account?"),
             ElevatedButton(
               onPressed: () => Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) => const Register())),
@@ -98,11 +98,11 @@ class Email_Imput extends StatelessWidget {
   }
 }
 
-class s extends StatelessWidget {
-  String ss;
-  String sss;
+class Under_Box extends StatelessWidget {
+  String enter;
+  String change;
 
-  s({required this.ss, required this.sss});
+  Under_Box({required this.enter, required this.change});
 
   @override
   Widget build(BuildContext context) {
@@ -110,7 +110,7 @@ class s extends StatelessWidget {
       ElevatedButton(
         onPressed: () {},
         child: Text(
-          ss,
+          enter,
           style: TextStyle(fontSize: textSize, color: Colors.white70),
         ),
         style: ElevatedButton.styleFrom(
@@ -127,7 +127,7 @@ class s extends StatelessWidget {
         width: 2000,
         height: textSize + 16,
         child: Text(
-          sss,
+          change,
           style: TextStyle(
             color: textColor,
             fontSize: textSize,
@@ -163,7 +163,7 @@ class _PasswordState extends State<Password_Input> {
 
       return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         Text(
-          title,
+          '',
           style: TextStyle(
             color: textColor,
             fontSize: textSize,
@@ -176,7 +176,7 @@ class _PasswordState extends State<Password_Input> {
         TextField(
           decoration: InputDecoration(
               border: OutlineInputBorder(),
-              labelText: lable,
+              labelText: "",
               labelStyle: TextStyle(color: Colors.grey, fontSize: textSize),
               //contentPadding: EdgeInsets.symmetric(
               //horizontal: 40.0,

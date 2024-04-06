@@ -7,10 +7,8 @@ class Register extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var  textColor2 = Colors.grey;
-
-    var textColor = Colors.black54;
     var textSize = 16.0;
+
     return Scaffold(
       body: Padding(
         padding: const EdgeInsets.only(top: 118, left: 16, right: 16 , bottom: 32),
@@ -29,7 +27,7 @@ class Register extends StatelessWidget {
             Padding(
               padding: EdgeInsets.only(bottom: 32),
             ),
-            s(ss: "Register", sss: 'Already have an account?'),
+            Under_Box(enter: "Register", change: 'Already have an account?'),
             ElevatedButton(
               onPressed: () => Navigator.of(context)
                   .push(MaterialPageRoute(builder: (context) => const Login())),
