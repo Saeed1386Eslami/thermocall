@@ -22,7 +22,7 @@ class Login extends StatelessWidget {
             Padding(
               padding: EdgeInsets.only(bottom: 32),
             ),
-            Password_Input(title: "Password", lable: "Enter your password"),
+            PasswordInput(title: "Password", lable: "Enter your password"),
             Padding(
               padding: EdgeInsets.only(bottom: 16),
             ),
@@ -153,12 +153,12 @@ class UnderBox extends StatelessWidget {
 
 
 
-class Password_Input extends StatefulWidget {
+class PasswordInput extends StatefulWidget {
 
   String title;
   String lable;
 
-  Password_Input({required this.title, required this.lable});
+  PasswordInput({required this.title, required this.lable});
 
   @override
   State<StatefulWidget> createState() {
@@ -166,7 +166,7 @@ class Password_Input extends StatefulWidget {
   }
 }
 
-class _PasswordState extends State<Password_Input> {
+class _PasswordState extends State<PasswordInput> {
   bool _hidden = false;
 
   @override

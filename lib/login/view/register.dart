@@ -19,11 +19,11 @@ class Register extends StatelessWidget {
             Padding(
               padding: EdgeInsets.only(bottom: 32),
             ),
-            Password_Input(title: 'Create Password', lable: 'Enter your password'),
+            PasswordInput(title: 'Create Password', lable: 'Enter your password'),
             Padding(
               padding: EdgeInsets.only(bottom: 32),
             ),
-            Password_Input(title: 'Repeat password', lable: 'Reapeat your password'),
+            PasswordInput(title: 'Repeat password', lable: 'Reapeat your password'),
             Padding(
               padding: EdgeInsets.only(bottom: 32),
             ),
