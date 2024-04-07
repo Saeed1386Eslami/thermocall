@@ -41,7 +41,7 @@ class Login extends StatelessWidget {
             Padding(
               padding: EdgeInsets.only(bottom: 32),
             ),
-            Under_Box(enter: 'Log in', change: "Don't have an account?"),
+            UnderBox(enter: 'Log in', change: "Don't have an account?"),
             ElevatedButton(
               onPressed: () => Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) => const Register())),
@@ -105,11 +105,11 @@ class EmailInput extends StatelessWidget {
 
 
 
-class Under_Box extends StatelessWidget {
+class UnderBox extends StatelessWidget {
   String enter;
   String change;
 
-  Under_Box({required this.enter, required this.change});
+  UnderBox({required this.enter, required this.change});
 
   @override
   Widget build(BuildContext context) {

@@ -27,7 +27,7 @@ class Register extends StatelessWidget {
             Padding(
               padding: EdgeInsets.only(bottom: 32),
             ),
-            Under_Box(enter: "Register", change: 'Already have an account?'),
+            UnderBox(enter: "Register", change: 'Already have an account?'),
             ElevatedButton(
               onPressed: () => Navigator.of(context)
                   .push(MaterialPageRoute(builder: (context) => const Login())),
