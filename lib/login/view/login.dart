@@ -143,7 +143,6 @@ class Under_Box extends StatelessWidget {
 }
 
 class Password_Input extends StatefulWidget {
-
   String title;
   String lable;
 
@@ -158,41 +157,39 @@ class Password_Input extends StatefulWidget {
 class _PasswordState extends State<Password_Input> {
   bool _hidden = false;
 
-    @override
-    Widget build(BuildContext context) {
-
-      return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-        Text(
-          '',
-          style: TextStyle(
-            color: textColor,
-            fontSize: textSize,
-          ),
-          textAlign: TextAlign.left,
+  @override
+  Widget build(BuildContext context) {
+    return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+      Text(
+        '',
+        style: TextStyle(
+          color: textColor,
+          fontSize: textSize,
         ),
-        Padding(
-          padding: EdgeInsets.only(bottom: 16),
-        ),
-        TextField(
-          decoration: InputDecoration(
-              border: OutlineInputBorder(),
-              labelText: '',
-              labelStyle: TextStyle(color: Colors.grey, fontSize: textSize),
-              //contentPadding: EdgeInsets.symmetric(
-              //horizontal: 40.0,
-              suffixIcon: IconButton(
-                onPressed: () {
-                  setState(() {
-                    _hidden = !_hidden;
-                  });
-                },
-                icon: _hidden
-                    ? Icon(Icons.visibility_outlined)
-                    : Icon(Icons.visibility_off_outlined),
-              )),
-        ),
-        //),
-      ]);
-
+        textAlign: TextAlign.left,
+      ),
+      Padding(
+        padding: EdgeInsets.only(bottom: 16),
+      ),
+      TextField(
+        decoration: InputDecoration(
+            border: OutlineInputBorder(),
+            labelText: '',
+            labelStyle: TextStyle(color: Colors.grey, fontSize: textSize),
+            //contentPadding: EdgeInsets.symmetric(
+            //horizontal: 40.0,
+            suffixIcon: IconButton(
+              onPressed: () {
+                setState(() {
+                  _hidden = !_hidden;
+                });
+              },
+              icon: _hidden
+                  ? Icon(Icons.visibility_outlined)
+                  : Icon(Icons.visibility_off_outlined),
+            )),
+      ),
+      //),
+    ]);
   }
-  }
+}
