@@ -18,7 +18,7 @@ class Login extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Email_Input(),
+            EmailInput(),
             Padding(
               padding: EdgeInsets.only(bottom: 32),
             ),
@@ -70,8 +70,8 @@ class Login extends StatelessWidget {
 
 
 
-class Email_Input extends StatelessWidget {
-  const Email_Input({super.key});
+class EmailInput extends StatelessWidget {
+  const EmailInput({super.key});
 
   @override
   Widget build(BuildContext context) {
