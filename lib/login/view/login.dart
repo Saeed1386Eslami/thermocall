@@ -18,7 +18,7 @@ class Login extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Email_Imput(),
+            Email_Input(),
             Padding(
               padding: EdgeInsets.only(bottom: 32),
             ),
@@ -67,8 +67,11 @@ class Login extends StatelessWidget {
   }
 }
 
-class Email_Imput extends StatelessWidget {
-  const Email_Imput({super.key});
+
+
+
+class Email_Input extends StatelessWidget {
+  const Email_Input({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -85,6 +88,7 @@ class Email_Imput extends StatelessWidget {
         padding: EdgeInsets.only(bottom: 16),
       ),
       TextField(
+        keyboardType: TextInputType.emailAddress,
         decoration: InputDecoration(
           border: OutlineInputBorder(),
           labelText: 'Enter your email',
@@ -97,6 +101,9 @@ class Email_Imput extends StatelessWidget {
     ]);
   }
 }
+
+
+
 
 class Under_Box extends StatelessWidget {
   String enter;
@@ -142,7 +149,12 @@ class Under_Box extends StatelessWidget {
   }
 }
 
+
+
+
+
 class Password_Input extends StatefulWidget {
+
   String title;
   String lable;
 
@@ -161,7 +173,7 @@ class _PasswordState extends State<Password_Input> {
   Widget build(BuildContext context) {
     return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
       Text(
-        '',
+        widget.title,
         style: TextStyle(
           color: textColor,
           fontSize: textSize,
@@ -172,9 +184,11 @@ class _PasswordState extends State<Password_Input> {
         padding: EdgeInsets.only(bottom: 16),
       ),
       TextField(
+        keyboardType: TextInputType.emailAddress,
         decoration: InputDecoration(
-            border: OutlineInputBorder(),
-            labelText: '',
+
+    border: OutlineInputBorder(),
+            labelText: widget.lable,
             labelStyle: TextStyle(color: Colors.grey, fontSize: textSize),
             //contentPadding: EdgeInsets.symmetric(
             //horizontal: 40.0,
@@ -189,6 +203,7 @@ class _PasswordState extends State<Password_Input> {
                   : Icon(Icons.visibility_off_outlined),
             )),
       ),
+      SingleChildScrollView()
       //),
     ]);
   }

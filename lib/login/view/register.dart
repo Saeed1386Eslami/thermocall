@@ -15,7 +15,7 @@ class Register extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Email_Imput(),
+            Email_Input(),
             Padding(
               padding: EdgeInsets.only(bottom: 32),
             ),
