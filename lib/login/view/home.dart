@@ -20,18 +20,18 @@ class FristPage extends StatelessWidget {
               Freezer(freezer_name: "Bio Cell", Update: "Last Updated 6:25 pm"),
               Padding(
                   padding: EdgeInsets.only(
-                bottom: 18,
+                bottom: 8,
               )),
               Padding(
                   padding: EdgeInsets.only(
-                bottom: 18,
+                bottom: 8,
               )),
               Freezer(freezer_name: "Bio Cell", Update: "Last Updated 6:25 pm"),Padding(
-                      padding: EdgeInsets.only(bottom:18,)              ),
+                      padding: EdgeInsets.only(bottom:8,)              ),
               Freezer(freezer_name: "Bio Cell", Update: "Last Updated 6:25 pm"),
               Padding(
                   padding: EdgeInsets.only(
-                bottom: 18,
+                bottom:8,
               )),
               Freezer(freezer_name: "Bio Cell", Update: "Last Updated 6:25 pm"),
               Padding(
@@ -46,7 +46,7 @@ class FristPage extends StatelessWidget {
               Freezer(freezer_name: "Bio Cell", Update: "Last Updated 6:25 pm"),
               Padding(
                   padding: EdgeInsets.only(
-                bottom: 14,
+                bottom:8,
               )),
               Freezer(freezer_name: "Bio Cell", Update: "Last Updated 6:25 pm"),
             ])));
