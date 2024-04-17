@@ -67,7 +67,7 @@ class Freezer extends StatelessWidget {
         Container(
           width: 2000,
           height: 90,
-          color: Colors.red,
+          color: Colors.grey,
           child:
               Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
             Text(freezer_name,
