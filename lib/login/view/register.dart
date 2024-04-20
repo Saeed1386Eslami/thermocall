@@ -9,8 +9,9 @@ class Register extends StatelessWidget {
   Widget build(BuildContext context) {
     var textSize = 16.0;
 
-    return Scaffold(
-      body: Padding(
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Padding(
         padding: const EdgeInsets.only(top: 118, left: 16, right: 16 , bottom: 32),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,

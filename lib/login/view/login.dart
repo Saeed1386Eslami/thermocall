@@ -11,8 +11,9 @@ class Login extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Padding(
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Padding(
         padding:
             const EdgeInsets.only(top: 214, left: 16, right: 16, bottom: 32),
         child: Column(
