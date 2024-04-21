@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/material.dart';
@@ -12,6 +14,7 @@ class HomePage extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
+        //  appBar: AppBar (title: Text("Thermocal", textAlign: ),
           body: SingleChildScrollView(
             child: Padding(
                 padding: const EdgeInsets.only(
@@ -99,26 +102,33 @@ class Freezer extends StatelessWidget {
             bottom: 8,
           )),
         ]),
+        Spacer(),
         Expanded(
             child: Row(
           children: [
             Text(
               "-65",
-              style: TextStyle(color: Colors.blueAccent, fontSize: 16),
+              style: TextStyle(color: Colors.blueAccent, fontSize: 15),
             ),
-            ElevatedButton(
-              onPressed: () {},
-              style: ElevatedButton.styleFrom(
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(360))),
-              child: Text(
-                "-60",
-                style: TextStyle(color: Colors.red, fontSize: 16),
+            ClipRRect(
+              borderRadius : BorderRadius.circular(360),
+
+              child: Container(
+                color: Colors.grey,
+                child: Padding(
+                  padding: EdgeInsets.all(10),
+                  child: Text(
+                    "-60",
+                    style: TextStyle(color: Colors.red, fontSize: 20),
+                  ),
+                ),
               ),
             ),
-            Text(
-              "-50",
-              style: TextStyle(color: Colors.black, fontSize: 16),
+            Padding(
+              padding: EdgeInsets.only(right: 15),              child: Text(
+                "-50",
+                style: TextStyle(color: Colors.black, fontSize: 15),
+              ),
             )
           ],
         )),
