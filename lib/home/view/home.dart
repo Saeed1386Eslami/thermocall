@@ -14,8 +14,8 @@ class HomePage extends StatelessWidget {
         home: Scaffold(
           body: SingleChildScrollView(
             child: Padding(
-                padding:
-                    const EdgeInsets.only(top: 50, left: 16, right: 16, bottom: 8),
+                padding: const EdgeInsets.only(
+                    top: 50, left: 16, right: 16, bottom: 8),
                 child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -75,9 +75,6 @@ class HomePage extends StatelessWidget {
 }
 
 class Freezer extends StatelessWidget {
-  
-  
-  
   String freezer_name;
   String Update;
 
@@ -87,21 +84,21 @@ class Freezer extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       height: 100,
-      child: Row(
-        children:[ Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                    Text(
-        freezer_name,
-        style: TextStyle(color: Colors.black, fontSize: 20),
-                    ),
-                    Text(
-        Update,
-        style: TextStyle(color: Colors.grey, fontSize: 16),
-                    ),
-                    Padding(
-          padding: EdgeInsets.only(
-        bottom: 8,
-                    )),
-                  ]),
+      child: Row(children: [
+        Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+          Text(
+            freezer_name,
+            style: TextStyle(color: Colors.black, fontSize: 20),
+          ),
+          Text(
+            Update,
+            style: TextStyle(color: Colors.grey, fontSize: 16),
+          ),
+          Padding(
+              padding: EdgeInsets.only(
+            bottom: 8,
+          )),
+        ]),
         Expanded(
             child: Row(
           children: [
@@ -112,10 +109,8 @@ class Freezer extends StatelessWidget {
             ElevatedButton(
               onPressed: () {},
               style: ElevatedButton.styleFrom(
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(360)
-            )
-            ),
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(360))),
               child: Text(
                 "-60",
                 style: TextStyle(color: Colors.red, fontSize: 16),
