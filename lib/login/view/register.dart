@@ -11,7 +11,8 @@ class Register extends StatelessWidget {
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Padding(
+      home: Scaffold(
+        body: Padding(
         padding: const EdgeInsets.only(top: 118, left: 16, right: 16 , bottom: 32),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -50,7 +51,7 @@ class Register extends StatelessWidget {
           ],
         ),
       ),
-    );
+    ));
   }
 }
 

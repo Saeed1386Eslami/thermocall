@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:thermocal/home/view/home.dart';
 import 'register.dart';
 
 const textColor = Colors.black54;
@@ -13,7 +14,8 @@ class Login extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Padding(
+      home: Scaffold(
+        body: Padding(
         padding:
             const EdgeInsets.only(top: 214, left: 16, right: 16, bottom: 32),
         child: Column(
@@ -64,7 +66,7 @@ class Login extends StatelessWidget {
           ],
         ),
       ),
-    );
+    ));
   }
 }
 
@@ -116,7 +118,10 @@ class UnderBox extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(children: [
       ElevatedButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.of(context).push(
+              MaterialPageRoute(builder: (context) => const HomePage()));
+        },
         child: Text(
           enter,
           style: TextStyle(fontSize: textSize, color: Colors.white70),

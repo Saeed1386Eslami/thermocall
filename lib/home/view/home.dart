@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/material.dart';
@@ -13,11 +11,11 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: Padding(
-            padding:
-                const EdgeInsets.only(top: 100, left: 16, right: 16, bottom: 8),
-            child: SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
+        home: Scaffold(
+          body: SingleChildScrollView(
+            child: Padding(
+                padding:
+                    const EdgeInsets.only(top: 50, left: 16, right: 16, bottom: 8),
                 child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -70,11 +68,16 @@ class HomePage extends StatelessWidget {
                       Freezer(
                           freezer_name: "Bio Cell",
                           Update: "Last Updated 6:25 pm"),
-                    ]))));
+                    ])),
+          ),
+        ));
   }
 }
 
 class Freezer extends StatelessWidget {
+  
+  
+  
   String freezer_name;
   String Update;
 
@@ -82,51 +85,49 @@ class Freezer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Expanded(
-          child: Container(
-            width: 2000,
-            height: 90,
-            color: Color(0xF1F9FF),
-            child:
-                Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-              Text(
-                freezer_name,
-                style: TextStyle(color: Color(002039), fontSize: 20),
-              ),
-              Text(
-                Update,
-                style: TextStyle(color: Color(686868), fontSize: 16),
-              ),
-              Padding(
-                  padding: EdgeInsets.only(
-                bottom: 8,
-              )),
-            ]),
-          ),
-        ),
+    return SizedBox(
+      height: 100,
+      child: Row(
+        children:[ Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                    Text(
+        freezer_name,
+        style: TextStyle(color: Colors.black, fontSize: 20),
+                    ),
+                    Text(
+        Update,
+        style: TextStyle(color: Colors.grey, fontSize: 16),
+                    ),
+                    Padding(
+          padding: EdgeInsets.only(
+        bottom: 8,
+                    )),
+                  ]),
         Expanded(
             child: Row(
           children: [
             Text(
               "-65",
-              style: TextStyle(color: Color(686868), fontSize: 16),
+              style: TextStyle(color: Colors.blueAccent, fontSize: 16),
             ),
             ElevatedButton(
               onPressed: () {},
+              style: ElevatedButton.styleFrom(
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(360)
+            )
+            ),
               child: Text(
                 "-60",
-                style: TextStyle(color: Color(686868), fontSize: 16),
+                style: TextStyle(color: Colors.red, fontSize: 16),
               ),
             ),
             Text(
               "-50",
-              style: TextStyle(color: Color(686868), fontSize: 16),
+              style: TextStyle(color: Colors.black, fontSize: 16),
             )
           ],
-        ))
-      ],
+        )),
+      ]),
     );
   }
 }
