@@ -2,6 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:thermocal/home/view/home.dart';
+import 'package:thermocal/login/view/password_state.dart';
+import 'package:thermocal/login/view/under_box.dart';
+import 'email_input.dart';
 import 'register.dart';
 
 const textColor = Colors.black54;
@@ -73,144 +76,7 @@ class Login extends StatelessWidget {
 
 
 
-class EmailInput extends StatelessWidget {
-  const EmailInput({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-      Text(
-        'Enter your email',
-        style: TextStyle(
-          color: textColor,
-          fontSize: textSize,
-        ),
-        textAlign: TextAlign.left,
-      ),
-      Padding(
-        padding: EdgeInsets.only(bottom: 16),
-      ),
-      TextField(
-        keyboardType: TextInputType.emailAddress,
-        decoration: InputDecoration(
-          border: OutlineInputBorder(),
-          labelText: 'Enter your email',
-          labelStyle: TextStyle(color: Colors.grey, fontSize: textSize),
-          //  contentPadding: EdgeInsets.symmetric(
-          //  horizontal: 40.0,
-        ),
-      ),
-      // ),
-    ]);
-  }
-}
 
 
 
 
-class UnderBox extends StatelessWidget {
-  String enter;
-  String change;
-
-  UnderBox({required this.enter, required this.change});
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(children: [
-      ElevatedButton(
-        onPressed: () {
-          Navigator.of(context).push(
-              MaterialPageRoute(builder: (context) => const HomePage()));
-        },
-        child: Text(
-          enter,
-          style: TextStyle(fontSize: textSize, color: Colors.white70),
-        ),
-        style: ElevatedButton.styleFrom(
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(7),
-            ),
-            backgroundColor: Colors.black87,
-            fixedSize: const Size(1000, 60)),
-      ),
-      Padding(
-        padding: EdgeInsets.only(bottom: 120),
-      ),
-      SizedBox(
-        width: 2000,
-        height: textSize + 16,
-        child: Text(
-          change,
-          style: TextStyle(
-            color: textColor,
-            fontSize: textSize,
-          ),
-          textAlign: TextAlign.center,
-        ),
-      ),
-      Padding(
-        padding: EdgeInsets.only(bottom: 16),
-      ),
-    ]);
-  }
-}
-
-
-
-
-
-class PasswordInput extends StatefulWidget {
-
-  String title;
-  String lable;
-
-  PasswordInput({required this.title, required this.lable});
-
-  @override
-  State<StatefulWidget> createState() {
-    return _PasswordState();
-  }
-}
-
-class _PasswordState extends State<PasswordInput> {
-  bool _hidden = false;
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-      Text(
-        widget.title,
-        style: TextStyle(
-          color: textColor,
-          fontSize: textSize,
-        ),
-        textAlign: TextAlign.left,
-      ),
-      Padding(
-        padding: EdgeInsets.only(bottom: 16),
-      ),
-      TextField(
-        keyboardType: TextInputType.emailAddress,
-        decoration: InputDecoration(
-
-    border: OutlineInputBorder(),
-            labelText: widget.lable,
-            labelStyle: TextStyle(color: Colors.grey, fontSize: textSize),
-            //contentPadding: EdgeInsets.symmetric(
-            //horizontal: 40.0,
-            suffixIcon: IconButton(
-              onPressed: () {
-                setState(() {
-                  _hidden = !_hidden;
-                });
-              },
-              icon: _hidden
-                  ? Icon(Icons.visibility_outlined)
-                  : Icon(Icons.visibility_off_outlined),
-            )),
-      ),
-      SingleChildScrollView()
-      //),
-    ]);
-  }
-}
