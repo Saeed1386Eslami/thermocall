@@ -1,5 +1,4 @@
 import 'dart:ui';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/material.dart';
@@ -44,53 +43,44 @@ class HomePage extends StatelessWidget {
                   children: [
                     Freezer(
                         freezer_name: "Bio Cell",
-                        Update: "Last Updated 6:25 pm"),
-                    Padding(
-                        padding: EdgeInsets.only(
-                      bottom: 8,
-                    )),
-                    Padding(
-                        padding: EdgeInsets.only(
-                      bottom: 8,
-                    )),
-                    Freezer(
-                        freezer_name: "Bio Cell",
-                        Update: "Last Updated 6:25 pm"),
+                        Update: "Last Updated 6:25 pm", iserror: false,),
                     Padding(
                         padding: EdgeInsets.only(
                       bottom: 8,
                     )),
                     Freezer(
-                        freezer_name: "Bio Cell",
-                        Update: "Last Updated 6:25 pm"),
+                        freezer_name: "Freezer name",
+                        Update: "Last Updated 6:25 pm", iserror: false,),
                     Padding(
                         padding: EdgeInsets.only(
                       bottom: 8,
                     )),
                     Freezer(
-                        freezer_name: "Bio Cell",
-                        Update: "Last Updated 6:25 pm"),
+                        freezer_name: "Freezer name",                        Update: "Last Updated 6:25 pm", iserror: true,),
                     Padding(
                         padding: EdgeInsets.only(
                       bottom: 8,
                     )),
                     Freezer(
-                        freezer_name: "Bio Cell",
-                        Update: "Last Updated 6:25 pm"),
+                        freezer_name: "Freezer name",                        Update: "Last Updated 6:25 pm", iserror: false,),
                     Padding(
                         padding: EdgeInsets.only(
                       bottom: 8,
                     )),
                     Freezer(
-                        freezer_name: "Bio Cell",
-                        Update: "Last Updated 6:25 pm"),
+                        freezer_name: "Freezer name",                        Update: "Last Updated 6:25 pm", iserror: false,),
                     Padding(
                         padding: EdgeInsets.only(
                       bottom: 8,
                     )),
                     Freezer(
-                        freezer_name: "Bio Cell",
-                        Update: "Last Updated 6:25 pm"),
+                        freezer_name: "Freezer name",                        Update: "Last Updated 6:25 pm", iserror: false,),
+                    Padding(
+                        padding: EdgeInsets.only(
+                      bottom: 8,
+                    )),
+                    Freezer(
+                        freezer_name: "Freezer name",                        Update: "Last Updated 6:25 pm", iserror: false,),
                   ])),
         ),
         floatingActionButton: FloatingActionButton(
@@ -122,7 +112,7 @@ class HomePage extends StatelessWidget {
       ),
       theme: ThemeData(
         floatingActionButtonTheme: FloatingActionButtonThemeData(
-          backgroundColor: Colors.blueAccent,
+          backgroundColor: Color(0xFF3C71A0),
         ),
       ),
     );
