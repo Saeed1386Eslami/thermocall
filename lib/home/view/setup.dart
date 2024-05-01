@@ -72,7 +72,7 @@ class SetupPage extends StatelessWidget {
                     horizontal: 10,
                     vertical: 16,
                   ),
-              ),
+                ),
               ),
               Padding(padding: EdgeInsets.only(bottom: 32)),
               TextField(
@@ -83,10 +83,51 @@ class SetupPage extends StatelessWidget {
                   labelStyle: TextStyle(color: Colors.grey, fontSize: textSize),
                   contentPadding: EdgeInsets.symmetric(
                     horizontal: 10,
-                    vertical: 40,
+                    vertical: 100,
                   ),
                 ),
               ),
+              Padding(padding: EdgeInsets.only(bottom: 16)),
+              Text("Set Temperature Range" , style: TextStyle(
+                fontSize: 16
+              ),),
+
+              Row(
+                children: [
+                  Padding(padding: EdgeInsets.only( right: 60)),
+                  Text(
+                    "-65",
+                    style: TextStyle(color: Color(0XFF002039), fontSize: 20),
+                  ),
+                  Padding(padding: EdgeInsets.only(left: 25)),
+
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(360),
+                    child: Container(
+                      height: 70,
+                      width: 70,
+                      color: Color(0xFFF1F9FF),
+                      child: Padding(
+                        padding: EdgeInsets.all(10),
+                        child: Center(
+                          child: Text(
+                            "-60",
+                            style: TextStyle(
+                                color: Color(0XFF002039), fontSize: 20),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(left: 25),
+                    child: Text(
+                      "-50",
+                      style: TextStyle(color: Color(0XFF002039), fontSize: 20),
+                    ),
+                  ),
+                ],
+              )
             ],
           ),
         ),
