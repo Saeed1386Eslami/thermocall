@@ -5,7 +5,6 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
 import 'freezer.dart';
 
-
 const textColor = Colors.black54;
 const textSize = 16.0;
 
@@ -41,17 +40,53 @@ class SetupPage extends StatelessWidget {
         body: Padding(
           padding: EdgeInsets.only(left: 16, right: 16),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text('ID : Th12345678',style: TextStyle(
-                fontSize: textSize,
-                color: textColor,
-              ),),
-              Padding(padding: EdgeInsets.only(bottom: 8),),
-              Text('Updated 1 minutes ago',style: TextStyle(
-                fontSize: textSize,
-                color: textColor,
-              ),),
-              Padding(padding: EdgeInsets.only(bottom: 20),),
+              Text(
+                'ID : Th12345678',
+                style: TextStyle(
+                  fontSize: textSize,
+                  color: textColor,
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.only(bottom: 8),
+              ),
+              Text(
+                'Updated 1 minutes ago',
+                style: TextStyle(
+                  fontSize: textSize,
+                  color: textColor,
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.only(bottom: 40),
+              ),
+              TextField(
+                keyboardType: TextInputType.emailAddress,
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: "Name",
+                  labelStyle: TextStyle(color: Colors.grey, fontSize: textSize),
+                  contentPadding: EdgeInsets.symmetric(
+                    horizontal: 10,
+                    vertical: 16,
+                  ),
+              ),
+              ),
+              Padding(padding: EdgeInsets.only(bottom: 32)),
+              TextField(
+                keyboardType: TextInputType.emailAddress,
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: "Description",
+                  labelStyle: TextStyle(color: Colors.grey, fontSize: textSize),
+                  contentPadding: EdgeInsets.symmetric(
+                    horizontal: 10,
+                    vertical: 40,
+                  ),
+                ),
+              ),
             ],
           ),
         ),

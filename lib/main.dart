@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
 
 
-home: Login()
+home: SetupPage()
 
 
     );
