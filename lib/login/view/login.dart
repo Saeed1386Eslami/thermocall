@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:thermocal/home/view/home.dart';
-import 'package:thermocal/login/view/password_state.dart';
+import 'package:thermocal/login/view/password_input.dart';
 import 'package:thermocal/login/view/under_box.dart';
 import 'email_input.dart';
 import 'register.dart';

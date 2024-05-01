@@ -12,11 +12,11 @@ class Freezer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ClipRRect(
-      borderRadius: BorderRadius.circular(7),
+      borderRadius: BorderRadius.circular(8),
       child: Container(
         color:iserror? Colors.red :Color(0xFFF1F9FF),
         child: SizedBox(
-          height: 100,
+          height: 90,
           child: Row(children: [
             Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
               Center(

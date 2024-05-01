@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
+import 'package:thermocal/home/view/setup.dart';
 import 'freezer.dart';
 
 class HomePage extends StatelessWidget {
@@ -79,7 +80,43 @@ class HomePage extends StatelessWidget {
                       bottom: 8,
                     )),
                     Freezer(
-                        freezer_name: "Freezer name",                        Update: "Last Updated 6:25 pm", iserror: false,),
+                        freezer_name: "Freezer name",
+                      Update: "Last Updated 6:25 pm", iserror: false,),
+                    Freezer(
+                      freezer_name: "Freezer name",                        Update: "Last Updated 6:25 pm", iserror: false,),
+                    Padding(
+                        padding: EdgeInsets.only(
+                          bottom: 8,
+                        )),
+                    Freezer(
+                      freezer_name: "Freezer name",                        Update: "Last Updated 6:25 pm", iserror: false,),
+                    Padding(
+                        padding: EdgeInsets.only(
+                          bottom: 8,
+                        )),
+                    Freezer(
+                      freezer_name: "Freezer name",                        Update: "Last Updated 6:25 pm", iserror: false,),
+                    Padding(
+                        padding: EdgeInsets.only(
+                          bottom: 8,
+                        )),
+                    Freezer(
+                      freezer_name: "Freezer name",                        Update: "Last Updated 6:25 pm", iserror: false,),
+                    Padding(
+                        padding: EdgeInsets.only(
+                          bottom: 8,
+                        )),Freezer(
+                      freezer_name: "Freezer name",                        Update: "Last Updated 6:25 pm", iserror: false,),
+                    Padding(
+                        padding: EdgeInsets.only(
+                          bottom: 8,
+                        )),Freezer(
+                      freezer_name: "Freezer name",                        Update: "Last Updated 6:25 pm", iserror: false,),
+                    Padding(
+                        padding: EdgeInsets.only(
+                          bottom: 8,
+                        )),
+
                   ])),
         ),
         floatingActionButton: FloatingActionButton(
