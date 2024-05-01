@@ -22,7 +22,7 @@ class EmailInput extends StatelessWidget {
         keyboardType: TextInputType.emailAddress,
         decoration: InputDecoration(
           border: OutlineInputBorder(),
-          labelText:         'Enter your email',
+          labelText:'Enter your email',
 
           labelStyle: TextStyle(color: Colors.grey, fontSize: textSize),
           //  contentPadding: EdgeInsets.symmetric(
