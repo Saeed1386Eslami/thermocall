@@ -82,6 +82,10 @@ class HomePage extends StatelessWidget {
                     Freezer(
                         freezer_name: "Freezer name",
                       Update: "Last Updated 6:25 pm", iserror: false,),
+                    Padding(
+                        padding: EdgeInsets.only(
+                          bottom: 8,
+                        )),
                     Freezer(
                       freezer_name: "Freezer name",                        Update: "Last Updated 6:25 pm", iserror: false,),
                     Padding(
